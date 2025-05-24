@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mes Réalisations</title>
+    <link rel="stylesheet" href="css/realisation.css" />
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <div class="logo">Alex <span>Morgan</span></div>
+
+        <nav class="nav" id="nav-menu">
+          <a href="header.html">Home</a>
+          <!-- <a href="#about">About</a> -->
+          <!-- <a href="#portfolio">Portfolio</a> -->
+          <a href="realisation.html">Réalisations</a>
+          <!-- <a href="#services">Services</a> -->
+          <!-- <a href="#Testimonials">Testimonials</a> -->
+          <!-- <a href="#contact">Contact</a> -->
+          <a href="tarif.html">tarifs</a>
+        </nav>
+
+        <a class="cta-button" href="#">Let's Collaborate</a>
+
+        <div class="burger" id="burger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+    </header>
+
+    <section class="portfolio-section">
+      <h2><span class="highlight">Mes</span> Vidéos</h2>
+
+      <div class="grid video-grid">
+        <div class="item">
+          <iframe
+            width="100%"
+            height="215"
+            src="https://www.youtube.com/embed/VZD526DLwUE"
+            title="Buna Boy"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+          ></iframe>
+          <h3>Buna Boy</h3>
+          <p>Description du projet</p>
+        </div>
+
+
+        <!-- <div class="item">
+          <video
+            src="assets/"
+            controls
+            poster="assets/images/cover-coffee.jpg"
+          ></video>
+          <h3>Coffee House</h3>
+          <p>Vidéo promotionnelle animée pour Instagram</p>
+        </div> -->
+        <div class="item">
+          <video
+            src="assets/videos/beauty-ad.mp4"
+            controls
+            poster="assets/images/cover-beauty.jpg"
+          ></video>
+          <h3>Beauty Ad</h3>
+          <p>Spot dynamique pour une marque de cosmétique</p>
+        </div>
+      </div>
+
+      <h2><span class="highlight">Mes</span> Designs</h2>
+
+      <div class="grid image-grid">
+        <div class="item">
+          <img src="assets/" alt="UI Design 1" />
+          <h3>UI Dashboard</h3>
+          <p>Interface épurée pour application mobile</p>
+        </div>
+        <div class="item">
+          <img src="assets/images/ecommerce-design.png" alt="eCommerce" />
+          <h3>E-commerce</h3>
+          <p>Page produit minimaliste et intuitive</p>
+        </div>
+        <div class="item">
+          <img src="assets/images/site-resto.png" alt="Resto Site" />
+          <h3>Site Restaurant</h3>
+          <p>Design web moderne et responsive</p>
+        </div>
+        <div class="item">
+          <img src="assets/images/landing-beauty.png" alt="Landing page" />
+          <h3>Landing Beauté</h3>
+          <p>Page d’accueil pour cosmétique naturel</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- footer -->
+    <footer>
+      <div class="footer-container">
+        <div class="footer-about">
+          <div class="footer-logo">Alex Morgan</div>
+          <p class="footer-description">
+            The ultimate design solutions platform built for creativity,
+            reliability, and performance. Trusted by businesses and individuals
+            worldwide with expert support available 24/7.
+          </p>
+        </div>
+
+        <div class="footer-column">
+          <h3>Services</h3>
+          <ul class="footer-links">
+            <li><a href="#">Graphic Design</a></li>
+            <li><a href="#">Web Design</a></li>
+            <li><a href="#">Branding</a></li>
+            <li><a href="#">UI/UX Design</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-column">
+          <h3>Solutions</h3>
+          <ul class="footer-links">
+            <li><a href="#">Portfolio</a></li>
+            <li><a href="#">Design Process</a></li>
+            <li><a href="#">Pricing Options</a></li>
+            <li><a href="#">Success Stories</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-column">
+          <h3>Resources</h3>
+          <ul class="footer-links">
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Tutorials</a></li>
+            <li><a href="#">Design Tools</a></li>
+            <li><a href="#">Help Center</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-column">
+          <h3>Legal</h3>
+          <ul class="footer-links">
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Terms of Service</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">© 2025 Alex Morgan. All rights reserved.</div>
+    </footer>
+    <!--  -->
+    <!-- Nouvau code -->
+    <script>
+      const burger = document.getElementById("burger");
+      const navMenu = document.getElementById("nav-menu");
+
+      burger.addEventListener("click", () => {
+        navMenu.classList.toggle("active");
+      });
+    </script>
+  </body>
+</html>

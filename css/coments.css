@@ -1,0 +1,158 @@
+.comment-container {
+  padding: 60 20px;
+  display: flex;
+  justify-content: space-between;
+  overflow-x: auto; /* permet le scroll horizontal */
+  scroll-behavior: smooth; /* pour une transition fluide */
+  scroll-snap-type: x mandatory; /* effet de snapping (optionnel) */
+}
+
+/* Section Témoignages */
+
+.testimonials-section {
+  margin: 0 auto;
+  padding: 20px;
+  max-width: 1200px;
+  display: grid;
+  justify-items: center;
+}
+.title {
+  width: 600px;
+  text-align: center;
+  margin-bottom: 30px;
+}
+.section-title {
+  font-size: 48px;
+  font-weight: 600;
+  color: #000;
+}
+.section-title span {
+  color: #ff023e;
+}
+
+.infos {
+  height: 500px;
+  padding-left: 20px;
+}
+.section-subtitle {
+  font-size: 18px;
+  font-weight: 300;
+  color: #000;
+  /* max-width: 600px; */
+  margin: 0 auto 3rem;
+}
+
+.testimonial-card {
+  border-radius: 15px;
+  display: flex;
+  
+}
+
+.client-photo {
+  width: 100%;
+  height: 600px;
+  border-radius: 10px;
+  object-fit: cover;
+  /* border: 2px solid #3498db; */
+  /* box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1); */
+}
+
+.testimonial-text {
+  max-width: 610px;
+  font-size: 28px;
+  font-weight: 300;
+  /* line-height: 1.8; */
+  color: #000;
+  margin-bottom: 2rem;
+  position: relative;
+}
+
+.testimonial-text::before {
+  content: open-quote;
+  font-size: 4rem;
+  color: #3498db;
+  opacity: 0.2;
+  position: absolute;
+  top: -30px;
+  left: -10px;
+}
+
+.client-info {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+}
+
+.client-name {
+  font-size: 30px;
+  font-weight: 600;
+  color: #000;
+  margin-bottom: 0.5rem;
+}
+/* Code masquer dans le html */
+/* .client-position {
+            color: #7f8c8d;
+            margin-bottom: 1rem;
+        } */
+
+.client-rating {
+  color: #f1c40f;
+  font-size: 1.5rem;
+  margin-top: 1rem;
+}
+.pagination {
+    position: static;
+  display: flex;
+  justify-content: space-between;
+  /* align-items: center; */
+  gap: 20px;
+  margin-top: 140px;
+}
+
+.pagination button {
+    padding: 20px 30px;
+    border-radius: 6px;
+    font-size: 20px; /* Un peu plus grand pour les flèches */
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+.prev{
+    background-color: #fff;
+    color: #000;
+    border: solid 1px #000;
+}
+
+.next{
+    background-color: #ff023e;
+    color: #fff;
+    border: none;
+}
+.pagination button:hover {
+  background-color: #25d366;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .section-title {
+    font-size: 2rem;
+  }
+
+  .testimonial-card {
+    padding: 2rem 1.5rem;
+  }
+
+  .testimonial-text {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .container {
+    padding: 3rem 1rem;
+  }
+
+  .client-photo {
+    width: 80px;
+    height: 80px;
+  }
+}

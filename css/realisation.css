@@ -1,0 +1,146 @@
+/* Nouveau code */
+body {
+      font-family: 'Poppins', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #fff;
+      color: #333;
+    }
+
+    .portfolio-section {
+      max-width: 1200px;
+      margin: auto;
+      padding: 60px 20px;
+    }
+
+    .portfolio-section h2 {
+      text-align: center;
+      font-size: 36px;
+      margin-bottom: 50px;
+    }
+
+    .portfolio-section .highlight {
+      color: #ff1e56;
+      font-weight: bold;
+    }
+
+    .grid {
+      display: grid;
+      gap: 30px;
+      margin-bottom: 60px;
+    }
+
+    .video-grid {
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    }
+
+    .image-grid {
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    }
+
+    .item {
+      text-align: center;
+    }
+
+    .item video,
+    .item img {
+      width: 100%;
+      border-radius: 15px;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    }
+
+    .item h3 {
+      margin-top: 15px;
+      font-size: 20px;
+      color: #222;
+    }
+
+    .item p {
+      font-size: 14px;
+      color: #666;
+    }
+
+    @media (max-width: 600px) {
+      .item h3 {
+        font-size: 18px;
+      }
+      /* Ajoout */
+#nav-menu {
+  display: none;
+}
+
+#nav-menu.active {
+  display: block;
+}
+/* Fin */
+    }
+
+/* body {
+      font-family: 'Poppins', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #fff;
+      color: #333;
+    }
+
+    .portfolio-section {
+      max-width: 1200px;
+      margin: auto;
+      padding: 60px 20px;
+    }
+
+    .portfolio-section h2 {
+      text-align: center;
+      font-size: 36px;
+      margin-bottom: 50px;
+    }
+
+    .portfolio-section .highlight {
+      color: #ff1e56;
+      font-weight: bold;
+    }
+
+    .work-item {
+      display: flex;
+      flex-wrap: wrap;
+      margin-bottom: 50px;
+      align-items: center;
+      gap: 30px;
+    }
+
+    .work-media {
+      flex: 1 1 500px;
+      max-width: 600px;
+    }
+
+    .work-media img,
+    .work-media video {
+      width: 100%;
+      border-radius: 15px;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    }
+
+    .work-description {
+      flex: 1 1 400px;
+    }
+
+    .work-description h3 {
+      font-size: 24px;
+      margin-bottom: 15px;
+      color: #222;
+    }
+
+    .work-description p {
+      font-size: 16px;
+      color: #555;
+    }
+
+    @media (max-width: 768px) {
+      .work-item {
+        flex-direction: column;
+      }
+
+      .work-description {
+        text-align: center;
+      }
+    } */
