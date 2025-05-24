@@ -1,22 +1,23 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Mes Réalisations</title>
-    <link rel="stylesheet" href="css/realisation.css" />
-    <link rel="stylesheet" href="css/styles.css" />
+    <title>Alex Morgan Portfolio</title>
+    <link rel="stylesheet" href="../css/tarif.css" />
+    <link rel="stylesheet" href="../css/styles.css" />
   </head>
   <body>
+    
     <header class="header">
-      <div class="container">
-        <div class="logo">Alex <span>Morgan</span></div>
+      <div class="tarif-container">
+        <div class="logo">Nova <span>- Dev</span></div>
 
         <nav class="nav" id="nav-menu">
           <a href="header.html">Home</a>
           <!-- <a href="#about">About</a> -->
           <!-- <a href="#portfolio">Portfolio</a> -->
-          <a href="realisation.html">Réalisations</a>
+          <a href="../includes/realisation.html">Réalisations</a>
           <!-- <a href="#services">Services</a> -->
           <!-- <a href="#Testimonials">Testimonials</a> -->
           <!-- <a href="#contact">Contact</a> -->
@@ -33,72 +34,66 @@
       </div>
     </header>
 
-    <section class="portfolio-section">
-      <h2><span class="highlight">Mes</span> Vidéos</h2>
+    <section class="pricing-section">
+      <h2><span class="highlight">My</span> Pricing</h2>
+      <p class="subtitle">
+        Simple and transparent pricing for all your creative needs.
+      </p>
 
-      <div class="grid video-grid">
-        <div class="item">
-          <iframe
-            width="100%"
-            height="215"
-            src="https://www.youtube.com/embed/VZD526DLwUE"
-            title="Buna Boy"
-            frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowfullscreen
-          ></iframe>
-          <h3>Buna Boy</h3>
-          <p>Description du projet</p>
+      <div class="pricing-cards">
+        <!-- Starter -->
+        <div class="pricing-card">
+          <h3>Starter</h3>
+          <p class="price">€199</p>
+          <ul>
+            <li>1 Page Website</li>
+            <li>Responsive Design</li>
+            <li>Basic SEO</li>
+            <li>Email Support</li>
+          </ul>
+          <a
+            href="https://wa.me/237697627966?text=Je%20souhaite%20commander%20le%20pack%20Starter"
+            class="btn"
+            >Choose Plan</a
+          >
         </div>
 
+        <!-- Professional -->
+        <div class="pricing-card featured">
+          <h3>Professional</h3>
+          <p class="price">€499</p>
+          <ul>
+            <li>Up to 5 Pages</li>
+            <li>UI/UX Design</li>
+            <li>SEO Optimized</li>
+            <li>Support via WhatsApp</li>
+          </ul>
+          <a
+            href="https://wa.me/237697627966?text=Je%20souhaite%20commander%20le%20pack%20Professional"
+            class="btn"
+            >Choose Plan</a
+          >
+        </div>
 
-        <!-- <div class="item">
-          <video
-            src="assets/"
-            controls
-            poster="assets/images/cover-coffee.jpg"
-          ></video>
-          <h3>Coffee House</h3>
-          <p>Vidéo promotionnelle animée pour Instagram</p>
-        </div> -->
-        <div class="item">
-          <video
-            src="assets/videos/beauty-ad.mp4"
-            controls
-            poster="assets/images/cover-beauty.jpg"
-          ></video>
-          <h3>Beauty Ad</h3>
-          <p>Spot dynamique pour une marque de cosmétique</p>
-        </div>
-      </div>
-
-      <h2><span class="highlight">Mes</span> Designs</h2>
-
-      <div class="grid image-grid">
-        <div class="item">
-          <img src="assets/" alt="UI Design 1" />
-          <h3>UI Dashboard</h3>
-          <p>Interface épurée pour application mobile</p>
-        </div>
-        <div class="item">
-          <img src="assets/images/ecommerce-design.png" alt="eCommerce" />
-          <h3>E-commerce</h3>
-          <p>Page produit minimaliste et intuitive</p>
-        </div>
-        <div class="item">
-          <img src="assets/images/site-resto.png" alt="Resto Site" />
-          <h3>Site Restaurant</h3>
-          <p>Design web moderne et responsive</p>
-        </div>
-        <div class="item">
-          <img src="assets/images/landing-beauty.png" alt="Landing page" />
-          <h3>Landing Beauté</h3>
-          <p>Page d’accueil pour cosmétique naturel</p>
+        <!-- Premium -->
+        <div class="pricing-card">
+          <h3>Premium</h3>
+          <p class="price">€899</p>
+          <ul>
+            <li>Unlimited Pages</li>
+            <li>Brand Identity Design</li>
+            <li>Advanced SEO</li>
+            <li>Priority Support</li>
+          </ul>
+          <a
+            href="https://wa.me/237697627966?text=Je%20souhaite%20commander%20le%20pack%20Premium"
+            class="btn"
+            >Choose Plan</a
+          >
         </div>
       </div>
     </section>
-
-    <!-- footer -->
+    <!-- foote -->
     <footer>
       <div class="footer-container">
         <div class="footer-about">
@@ -152,6 +147,7 @@
       <div class="footer-bottom">© 2025 Alex Morgan. All rights reserved.</div>
     </footer>
     <!--  -->
+
     <!-- Nouvau code -->
     <script>
       const burger = document.getElementById("burger");
