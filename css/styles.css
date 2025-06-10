@@ -41,7 +41,7 @@ body {
 }
 
 .container {
-  max-width: 1200px ;
+  max-width: 1150px ;
   /* margin: 0 auto; */
   /* padding: 20px; */
   display: flex ;
@@ -52,7 +52,7 @@ body {
 }
 
 .header-container {
-  max-width: 1200px ;
+  max-width: 1150px ;
   margin: 0 auto;
   padding: 20px;
   display: flex ;
@@ -81,6 +81,73 @@ body {
   font-size: 15px;
 }
 
+/* Burger icon */
+.burger2 {
+  display: none;
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  font-size: 30px;
+  color: white;
+  z-index: 1100;
+  cursor: pointer;
+}
+
+/* Sidebar */
+.sidebar1 {
+  position: fixed;
+  top: 50%;
+  left: 0;
+  margin-right: 50px;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.85);
+  padding: 1rem;
+  border-radius: 0 10px 10px 0;
+  z-index: 1000;
+  transition: left 0.3s ease;
+}
+
+.sidebar1 .nav {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+
+.sidebar1 .nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.sidebar1 .nav a:hover {
+  color: #00ffff;
+  transform: translateX(5px);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .burger {
+    display: block;
+  }
+   .burger2 {
+    display: block;
+  }
+
+  .sidebar {
+    left: -200px;
+    top: 0;
+    transform: none;
+    height: 100vh;
+    border-radius: 0;
+    padding-top: 60px;
+  }
+
+  .sidebar.active {
+    left: 0;
+  }
+}
+
 .cta-button {
   background-color: #25d366;
   color: #fff;
@@ -91,7 +158,7 @@ body {
 }
 /* Container de header */
 .hero {
-  max-width: 1200px;
+  max-width: 1150px;
   padding: 80px 20px;
   margin: 0 auto;
   display: flex;
@@ -115,6 +182,7 @@ body {
   flex: 1;
   min-width: 300px;
   height: auto;
+  text-align: justify;
 }
 
 /* Modifie ton nom ici */
@@ -158,11 +226,17 @@ body {
 .client-logos .circle {
   width: 75px;
   height: 75px;
-  background-color: #ccc;
+  background-color: #fff;
   border-radius: 50%;
   display: inline-block;
   margin-right: -20px;
-  border: solid 2px #fff;
+  border: solid 2px #ff023e;
+  /* clip-path:fill-box; */
+}
+
+.circle img {
+  margin: auto;
+  display: flex;
 }
 
 .hero-image {
@@ -206,7 +280,7 @@ body {
 }
 
 .social-icons {
-  margin-top: -450px;
+  margin-top: -650px;
   margin-right: 1%;
   display: grid;
   justify-content: center;
@@ -220,7 +294,7 @@ body {
 }
 .ligne-et-texte-2 {
   position: relative;
-  right: -125px;
+  right: -425px;
   display: grid;
   justify-items: center;
   gap: 25px; 
@@ -294,6 +368,9 @@ body {
 
 #nav-menu.active {
   display: block;
+}
+#home {
+  padding: 0;
 }
 .hero {
   margin: 0 auto;
@@ -398,6 +475,12 @@ body {
   height: 35px;
   background-color: #000; 
 }
+.cta-button {
+  height: fit-content;
+}
+.header-container {
+  height: 60px;
+}
 }
 /* Fin ici */
 
@@ -409,7 +492,7 @@ body {
 }
 
 .about-container{
-  max-width: 1200px;
+  max-width: 1150px;
   margin: 0 auto;
   display: flex;
   justify-content: center;
@@ -426,7 +509,7 @@ body {
   text-align: justify;
 }
 .about-text  h2{
-  width: 560px;
+  width: 50%;
   font-weight: 540;
   font-size: 48px;
   /* margin-top: 30px; */
@@ -497,38 +580,44 @@ body {
 }
 /* esponsives */
 @media (max-width: 768px) {
-  .about .container {
+  .about {
     flex-direction: column;
-    align-items: center;
-    text-align: center;
+    /* align-items: center; */
+    /* text-align: center; */
   }
 
+  .about-container{
+  /* max-width: 350px; */
+  margin: 0 ;
+  display: flex;
+  /* justify-content: center;
+  align-items: center; */
+  flex-wrap: wrap;
+  padding: 0;
+  gap: 30px;
+}
   .about-services li {
     flex-direction: column;
     align-items: center;
   }
 .about-text {
-  width: 380px;
-  padding-left: 40px;
+  width: auto;
+  /* padding-left: 40px; */
 }
   .about-services li div {
     text-align: center;
   }
   .image-placeholder {
-  width: 300px;
   height: 300px;
   background: #ddd;
 }
-.about-container{
-  max-width: 400px;
-  margin: 0 auto;
-  display: flex;
-  justify-content: center;
-  /* align-items: center; */
-  flex-wrap: wrap;
-  /* padding: 0 20px; */
-  /* gap: 30px; */
+.about-image {
+  margin: 0;
+  width: 100%;
 }
+
+
+
 }
 
 /* fin About */
@@ -536,7 +625,7 @@ body {
 /* Pofolio */
 
 .portfolio-container{
-  max-width: 1200px;
+  max-width: 1150px;
   margin: 0 auto;
   padding: 20px;
   display: flex ;
@@ -553,7 +642,7 @@ body {
 }
 
 .portfolio .container {
-  max-width: 1200px;
+  max-width: 1150px;
   margin: 0 auto;
 }
 
@@ -667,7 +756,7 @@ body {
 }
 
 .services-container {
-  max-width: 1200px;
+  max-width: 1150px;
   margin: 0 auto;
   padding: 20px;
   display: grid;
@@ -756,6 +845,14 @@ body {
             background-color: #fff;
             border-radius: 10px;
         }
+        .contact-container{
+          max-width: 1150px;
+  margin: 0 auto;
+  padding: 20px;
+  display: flex ;
+  justify-content: center;
+  flex-wrap: wrap;
+        }
 
         .contact-header {
           margin-top: 120px;
@@ -782,10 +879,14 @@ body {
 
         .contact-form {
             display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+            grid-auto-flow:row;
+            gap: 20;
+            
         }
         .form-group {
-            margin-bottom: 28px;
-            /* padding: 50px; */
+            /* margin-bottom: 20px; */
+             padding: 20px;
         }
 /* 
         input::placeholder{
@@ -835,12 +936,14 @@ body {
 
         /* Responsive Design */
         @media (min-width: 768px) {
+          
             .contact-form {
-                grid-template-columns: repeat(2, 1fr);
+              /* grid-template-columns: repeat(2, 1fr); */
+               grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
             }
             
-            .form-group.full-width {
-                grid-column: span 2;
+            .form-group{
+                grid-column: span 1;
             }
         }
 
@@ -867,7 +970,7 @@ body {
         }
 
         .footer-container {
-            max-width: 1200px;
+            max-width: 1150px;
             margin: 0 auto;
             display: grid;
             justify-items: center;
