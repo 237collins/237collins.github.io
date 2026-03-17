@@ -17,7 +17,7 @@
 
 ### 🛠️ Mon Expertise Technique
 
-* **Backend Architecture :** Conception d'APIs RESTful évolutives et sécurisées avec **C# / .NET 8**.
+* **Backend Architecture :** Conception d'APIs RESTful évolutives et sécurisées avec **C# / .NET 10**.
 * **Frontend Development :** Création d'interfaces utilisateurs (UI) modernes et réactives avec **Angular** et **Signals**.
 * **Database Management :** Modélisation de données, optimisation de requêtes et gestion avec **Entity Framework Core** & **PostgreSQL**.
 * **DevOps & Tools :** Utilisation de Git/GitHub pour le versioning et déploiement continu.
