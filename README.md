@@ -13,6 +13,8 @@
 
 ### 🌐 [**Consulter mon Portfolio en ligne**](https://237collins.github.io/) 
 
+
+### 🌐 [**Visite my Portfolio online**](https://237collins.github.io/) 
 ---
 
 ### 🛠️ Mon Expertise Technique
