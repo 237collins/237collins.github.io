@@ -16,4 +16,4 @@
 
 ---
 
-📫 **Comment me joindre :** collinsmomo05@gmail.com
+📫 **Comment me joindre :** collinsmomo05@gmail.com // Whatsapp :** 697 62 79 66
