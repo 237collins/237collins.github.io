@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="fr" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>[Votre Nom] | Portfolio Développeur</title>
+    <meta name="description" content="Portfolio professionnel de [Votre Nom], Développeur Full Stack spécialisé en [Vos Technologies Clés, ex: Angular & .NET Core].">
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#3B82F6', // Un bleu moderne
+                        secondary: '#1E293B', // Un ardoise foncé pour le texte
+                        background: '#F8FAFC', // Un gris très clair pour le fond
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    },
+                }
+            }
+        }
+    </script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;900&display=swap" rel="stylesheet">
+</head>
+<body class="bg-background text-secondary font-sans antialiased">
+
+    <nav class="bg-white/90 backdrop-blur-sm sticky top-0 z-50 border-b border-slate-100">
+        <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="#" class="text-2xl font-black text-primary italic tracking-tight">Collins MOMO</a>
+            <div class="space-x-8 text-sm font-medium text-slate-700">
+                <a href="#projets" class="hover:text-primary transition-colors">Projets</a>
+                <a href="#competences" class="hover:text-primary transition-colors">Compétences</a>
+                <a href="#contact" class="px-5 py-2.5 bg-slate-900 text-white rounded-full text-xs font-bold hover:bg-primary transition-all shadow-sm">Me Contacter</a>
+            </div>
+        </div>
+    </nav>
+
+    <header class="py-24 md:py-32 bg-white">
+        <div class="max-w-5xl mx-auto px-6 text-center">
+            <span class="inline-flex items-center px-4 py-1.5 rounded-full bg-blue-50 text-primary text-xs font-semibold tracking-wide ring-1 ring-inset ring-blue-700/10 mb-8">
+                Développeur Full Stack
+            </span>
+            <h1 class="text-5xl md:text-7xl font-extrabold text-slate-950 tracking-tighter leading-tight">
+                Je propulse vos idées <br/> en <span class="text-primary">applications modernes</span>.
+            </h1>
+            <p class="mt-8 text-xl text-slate-600 max-w-3xl mx-auto leading-relaxed">
+                Bonjour, je suis <strong>[Votre Nom]</strong>. Passionné par la création d'expériences numériques fluides et performantes. Basé à [Votre Ville/Pays], je me spécialise dans le développement [ex: d'APIs robustes et d'interfaces utilisateurs réactives].
+            </p>
+            <div class="mt-12 flex flex-col sm:flex-row gap-4 justify-center items-center">
+                <a href="#projets" class="px-8 py-4 bg-primary text-white rounded-xl font-bold hover:bg-blue-700 transition-all shadow-lg shadow-blue-500/20">
+                    Découvrir mes projets
+                </a>
+                <a href="[Lien vers votre CV PDF]" target="_blank" class="px-8 py-4 bg-white text-slate-900 rounded-xl font-bold border border-slate-200 hover:border-slate-300 hover:bg-slate-50 transition-all">
+                    Télécharger mon CV <i class="fas fa-download ml-2 text-xs opacity-70"></i>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <section id="projets" class="py-24 bg-background">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="mb-16 max-w-2xl">
+                <h2 class="text-4xl font-extrabold text-slate-950 tracking-tight flex items-center gap-3">
+                    <span class="w-2 h-8 bg-primary rounded-full"></span>
+                    Mes Réalisations
+                </h2>
+                <p class="text-lg text-slate-600 mt-4">Une sélection de projets sur lesquels j'ai travaillé, allant de prototypes personnels à des applications déployées.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                
+                <article class="bg-white p-8 rounded-3xl border border-slate-100 shadow-xl shadow-slate-200/30 flex flex-col group hover:border-blue-100 transition-all">
+                    <div class="flex justify-between items-start mb-6">
+                        <div class="w-14 h-14 bg-blue-50 rounded-2xl flex items-center justify-center text-primary text-2xl shadow-sm">
+                            <i class="fas fa-rocket"></i> </div>
+                        <a href="[Lien GitHub du Projet 1]" target="_blank" class="text-slate-400 hover:text-slate-900 transition-colors text-lg">
+                            <i class="fab fa-github"></i>
+                        </a>
+                    </div>
+                    
+                    <h3 class="text-2xl font-bold text-slate-950 group-hover:text-primary transition-colors tracking-tight">
+                        [Nom du Projet 1]
+                    </h3>
+                    <p class="text-slate-600 mt-3 text-base leading-relaxed flex-grow">
+                        [Description courte et percutante du projet. Expliquez le problème résolu ou l'objectif principal. Ex: Plateforme de gestion de tâches en temps réel.]
+                    </p>
+                    
+                    <div class="mt-6 pt-6 border-t border-slate-100 flex flex-wrap gap-2">
+                        <span class="px-3 py-1.5 bg-slate-100 text-slate-700 rounded-full text-xs font-medium">Angular</span>
+                        <span class="px-3 py-1.5 bg-slate-100 text-slate-700 rounded-full text-xs font-medium">.NET Core</span>
+                        <span class="px-3 py-1.5 bg-slate-100 text-slate-700 rounded-full text-xs font-medium">PostgreSQL</span>
+                    </div>
+
+                    <a href="[Lien Live Demo du Projet 1]" target="_blank" class="mt-8 inline-flex items-center gap-2 text-sm font-bold text-primary hover:text-blue-700 transition-colors">
+                        Voir la démo en ligne <i class="fas fa-arrow-right text-xs"></i>
+                    </a>
+                </article>
+
+                <article class="bg-white p-8 rounded-3xl border border-slate-100 shadow-xl shadow-slate-200/30 flex flex-col group hover:border-rose-100 transition-all">
+                    <div class="flex justify-between items-start mb-6">
+                        <div class="w-14 h-14 bg-rose-50 rounded-2xl flex items-center justify-center text-rose-500 text-2xl shadow-sm">
+                            <i class="fas fa-chart-line"></i>
+                        </div>
+                        <a href="[Lien GitHub du Projet 2]" target="_blank" class="text-slate-400 hover:text-slate-900 transition-colors text-lg">
+                            <i class="fab fa-github"></i>
+                        </a>
+                    </div>
+                    
+                    <h3 class="text-2xl font-bold text-slate-950 group-hover:text-rose-600 transition-colors tracking-tight">
+                        [Nom du Projet 2]
+                    </h3>
+                    <p class="text-slate-600 mt-3 text-base leading-relaxed flex-grow">
+                        [Description courte. Ex: Application mobile de suivi de finances personnelles avec visualisation de données.]
+                    </p>
+                    
+                    <div class="mt-6 pt-6 border-t border-slate-100 flex flex-wrap gap-2">
+                        <span class="px-3 py-1.5 bg-slate-100 text-slate-700 rounded-full text-xs font-medium">React Native</span>
+                        <span class="px-3 py-1.5 bg-slate-100 text-slate-700 rounded-full text-xs font-medium">Firebase</span>
+                    </div>
+
+                    <a href="[Lien Live Demo du Projet 2]" target="_blank" class="mt-8 inline-flex items-center gap-2 text-sm font-bold text-rose-500 hover:text-rose-700 transition-colors">
+                        Voir la démo <i class="fas fa-arrow-right text-xs"></i>
+                    </a>
+                </article>
+
+                <article class="bg-white p-8 rounded-3xl border border-slate-100 shadow-xl shadow-slate-200/30 flex flex-col group hover:border-emerald-100 transition-all">
+                    <div class="flex justify-between items-start mb-6">
+                        <div class="w-14 h-14 bg-emerald-50 rounded-2xl flex items-center justify-center text-emerald-500 text-2xl shadow-sm">
+                            <i class="fas fa-shield-alt"></i>
+                        </div>
+                        <a href="[Lien GitHub du Projet 3]" target="_blank" class="text-slate-400 hover:text-slate-900 transition-colors text-lg">
+                            <i class="fab fa-github"></i>
+                        </a>
+                    </div>
+                    
+                    <h3 class="text-2xl font-bold text-slate-950 group-hover:text-emerald-600 transition-colors tracking-tight">
+                        [Nom du Projet 3]
+                    </h3>
+                    <p class="text-slate-600 mt-3 text-base leading-relaxed flex-grow">
+                        [Description courte. Ex: API REST sécurisée pour un service d'authentification centralisé.]
+                    </p>
+                    
+                    <div class="mt-6 pt-6 border-t border-slate-100 flex flex-wrap gap-2">
+                        <span class="px-3 py-1.5 bg-slate-100 text-slate-700 rounded-full text-xs font-medium">Node.js</span>
+                        <span class="px-3 py-1.5 bg-slate-100 text-slate-700 rounded-full text-xs font-medium">Express</span>
+                        <span class="px-3 py-1.5 bg-slate-100 text-slate-700 rounded-full text-xs font-medium">JWT</span>
+                    </div>
+
+                    <a href="[Lien Documentation du Projet 3]" target="_blank" class="mt-8 inline-flex items-center gap-2 text-sm font-bold text-emerald-500 hover:text-emerald-700 transition-colors">
+                        Voir la doc API <i class="fas fa-arrow-right text-xs"></i>
+                    </a>
+                </article>
+
+            </div>
+            
+            <div class="mt-20 text-center">
+                <a href="https://github.com/[votrepseudo]" target="_blank" class="inline-flex items-center gap-2.5 px-6 py-3 bg-slate-900 text-white rounded-xl font-semibold hover:bg-slate-800 transition-all text-sm shadow-md">
+                    <i class="fab fa-github text-base"></i> Voir plus de projets sur GitHub
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section id="competences" class="py-24 bg-white">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="mb-16 max-w-2xl">
+                <h2 class="text-4xl font-extrabold text-slate-950 tracking-tight flex items-center gap-3">
+                    <span class="w-2 h-8 bg-amber-500 rounded-full"></span>
+                    Ma Boîte à Outils
+                </h2>
+                <p class="text-lg text-slate-600 mt-4">Voici les technologies et outils que j'utilise au quotidien pour donner vie aux projets.</p>
+            </div>
+
+            <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-6 text-center">
+                <div class="bg-background p-6 rounded-2xl border border-slate-100 flex flex-col items-center shadow-sm">
+                    <i class="fab fa-angular text-4xl text-[#DD0031] mb-4"></i>
+                    <span class="font-semibold text-sm text-slate-900">Angular</span>
+                </div>
+                <div class="bg-background p-6 rounded-2xl border border-slate-100 flex flex-col items-center shadow-sm">
+                    <i class="fab fa-react text-4xl text-[#61DAFB] mb-4"></i>
+                    <span class="font-semibold text-sm text-slate-900">React</span>
+                </div>
+                <div class="bg-background p-6 rounded-2xl border border-slate-100 flex flex-col items-center shadow-sm">
+                    <i class="fas fa-code text-4xl text-slate-600 mb-4"></i>
+                    <span class="font-semibold text-sm text-slate-900">.NET Core</span>
+                </div>
+                <div class="bg-background p-6 rounded-2xl border border-slate-100 flex flex-col items-center shadow-sm">
+                    <i class="fab fa-node-js text-4xl text-[#339933] mb-4"></i>
+                    <span class="font-semibold text-sm text-slate-900">Node.js</span>
+                </div>
+                <div class="bg-background p-6 rounded-2xl border border-slate-100 flex flex-col items-center shadow-sm">
+                    <i class="fas fa-database text-4xl text-[#336791] mb-4"></i>
+                    <span class="font-semibold text-sm text-slate-900">PostgreSQL</span>
+                </div>
+                <div class="bg-background p-6 rounded-2xl border border-slate-100 flex flex-col items-center shadow-sm">
+                    <i class="fab fa-docker text-4xl text-[#2496ED] mb-4"></i>
+                    <span class="font-semibold text-sm text-slate-900">Docker</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="py-24 bg-background">
+        <div class="max-w-4xl mx-auto px-6 text-center">
+            <div class="p-12 md:p-16 bg-white rounded-[40px] border border-slate-100 shadow-2xl shadow-slate-200/40">
+                <i class="fas fa-paper-plane text-5xl text-primary mb-8"></i>
+                <h2 class="text-4xl md:text-5xl font-extrabold text-slate-950 tracking-tighter leading-tight">
+                    Un projet en tête ? <br/> Parlons-en ensemble.
+                </h2>
+                <p class="mt-8 text-xl text-slate-600 leading-relaxed max-w-2xl mx-auto">
+                    Je suis toujours ouvert à de nouvelles opportunités de collaboration, que ce soit pour une mission freelance ou un poste en CDI. N'hésitez pas à me contacter par email ou via LinkedIn.
+                </p>
+                <div class="mt-12 flex flex-col sm:flex-row gap-4 justify-center items-center">
+                    <a href="mailto:[votre.email@exemple.com]" class="inline-flex items-center gap-2.5 px-8 py-4 bg-primary text-white rounded-xl font-bold hover:bg-blue-700 transition-all shadow-lg shadow-blue-500/20">
+                        <i class="fas fa-envelope text-sm"></i> [votre.email@exemple.com]
+                    </a>
+                    <a href="[Lien vers votre profil LinkedIn]" target="_blank" class="inline-flex items-center gap-2.5 px-8 py-4 bg-white text-slate-900 rounded-xl font-bold border border-slate-200 hover:border-slate-300 hover:bg-slate-50 transition-all">
+                        <i class="fab fa-linkedin text-sm text-[#0077B5]"></i> Mon profil LinkedIn
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="py-10 bg-white border-t border-slate-100 text-center">
+        <p class="text-sm text-slate-500">
+            &copy; 2024 [Votre Nom]. Fait avec <i class="fas fa-heart text-rose-500 mx-1 text-xs"></i> et Tailwind CSS.
+        </p>
+        <div class="mt-4 flex justify-center space-x-6 text-slate-400">
+            <a href="https://github.com/[votrepseudo]" target="_blank" class="hover:text-slate-900 transition-colors"><i class="fab fa-github"></i></a>
+            <a href="[Lien LinkedIn]" target="_blank" class="hover:text-slate-900 transition-colors"><i class="fab fa-linkedin"></i></a>
+            <a href="mailto:[votre.email]" class="hover:text-slate-900 transition-colors"><i class="fas fa-envelope"></i></a>
+        </div>
+    </footer>
+
+</body>
+</html>
