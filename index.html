@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> Collins | Portfolio Développeur</title>
-    <meta name="description" content="Portfolio professionnel de Collins, Développeur Full Stack spécialisé .NET Core, Angular, Flutter.">
+    <title> Dev | Portfolio Développeur</title>
+    <meta name="description" content="Portfolio professionnel, Développeur Full Stack spécialisé .NET Core, Angular, Flutter.">
     
     <script src="https://cdn.tailwindcss.com"></script>
     
@@ -33,15 +33,70 @@
 <body class="bg-background text-secondary font-sans antialiased">
 
     <nav class="bg-white/90 backdrop-blur-sm sticky top-0 z-50 border-b border-slate-100">
-        <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
-            <a href="#" class="text-2xl font-black text-primary italic tracking-tight">Collins MOMO</a>
-            <div class="space-x-8 text-sm font-medium text-slate-700">
-                <a href="#projets" class="hover:text-primary transition-colors">Projets</a>
-                <a href="#competences" class="hover:text-primary transition-colors">Compétences</a>
-                <a href="#contact" class="px-5 py-2.5 bg-slate-900 text-white rounded-full text-xs font-bold hover:bg-primary transition-all shadow-sm">Me Contacter</a>
-            </div>
+    <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center relative z-50 bg-white/90">
+        <!-- Logo -->
+        <a href="#" class="text-4xl font-black text-primary tracking-tight">Nova - Dev</a>
+
+        <!-- Bouton Burger -->
+        <button id="menu-btn" class="block md:hidden text-slate-700 focus:outline-none p-2">
+            <svg class="w-8 h-8 transition-transform duration-300" id="burger-svg" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path id="menu-icon" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+            </svg>
+        </button>
+
+        <!-- Liens Desktop -->
+        <div class="hidden md:flex space-x-8 text-sm font-medium text-slate-700 items-center">
+            <a href="#projets" class="hover:text-primary transition-colors">Projets</a>
+            <a href="#competences" class="hover:text-primary transition-colors">Compétences</a>
+            <a href="#contact" class="px-5 py-2.5 bg-slate-900 text-white rounded-full text-xs font-bold hover:bg-[#25D366] transition-all shadow-sm">Me Contacter</a>
         </div>
-    </nav>
+    </div>
+
+    <!-- Menu Mobile avec Animation -->
+    <div id="mobile-menu" 
+         class="md:hidden overflow-hidden transition-all duration-500 ease-in-out max-h-0 opacity-0 bg-white border-b border-slate-100 shadow-xl">
+        <div class="px-6 py-6 space-y-5">
+            <a href="#projets" class="mobile-link block text-lg text-slate-700 hover:text-[#25D366] font-semibold transition-colors">Projets</a>
+            <a href="#competences" class="mobile-link block text-lg text-slate-700 hover:text-[#25D366] font-semibold transition-colors">Compétences</a>
+            <hr class="border-slate-100">
+            <a href="#contact" class="mobile-link block w-full text-center px-5 py-4 bg-[#25D366] text-white rounded-2xl text-sm font-bold shadow-lg shadow-[#25D366]/20">Me Contacter</a>
+        </div>
+    </div>
+</nav>
+
+<script>
+    const btn = document.getElementById('menu-btn');
+    const menu = document.getElementById('mobile-menu');
+    const icon = document.getElementById('menu-icon');
+    const svg = document.getElementById('burger-svg');
+    const links = document.querySelectorAll('.mobile-link');
+
+    function toggleMenu() {
+        const isOpen = menu.style.maxHeight !== '0px' && menu.style.maxHeight !== '';
+        
+        if (!isOpen) {
+            // Ouvrir
+            menu.style.maxHeight = '400px'; // Valeur assez haute pour contenir le contenu
+            menu.style.opacity = '1';
+            icon.setAttribute('d', 'M6 18L18 6M6 6l12 12');
+            svg.classList.add('rotate-90');
+        } else {
+            // Fermer
+            menu.style.maxHeight = '0px';
+            menu.style.opacity = '0';
+            icon.setAttribute('d', 'M4 6h16M4 12h16M4 18h16');
+            svg.classList.remove('rotate-90');
+        }
+    }
+
+    btn.addEventListener('click', toggleMenu);
+
+    // Fermer le menu automatiquement quand on clique sur un lien
+    links.forEach(link => {
+        link.addEventListener('click', toggleMenu);
+    });
+</script>
+
 
     <header class="py-24 md:py-32 bg-white">
         <div class="max-w-5xl mx-auto px-6 text-center">
@@ -215,7 +270,7 @@
     </section>
 
     <section id="contact" class="py-24 bg-background">
-        <div class="max-w-4xl mx-auto px-6 text-center">
+        <div class="max-w-5xl mx-auto px-6 text-center">
             <div class="p-12 md:p-16 bg-white rounded-[40px] border border-slate-100 shadow-2xl shadow-slate-200/40">
                 <i class="fas fa-paper-plane text-5xl text-primary mb-8"></i>
                 <h2 class="text-4xl md:text-5xl font-extrabold text-slate-950 tracking-tighter leading-tight">
@@ -231,6 +286,9 @@
                     <a href="https://www.linkedin.com/in/collins-momo-a21909299" target="_blank" class="inline-flex items-center gap-2.5 px-8 py-4 bg-white text-slate-900 rounded-xl font-bold border border-slate-200 hover:border-slate-300 hover:bg-slate-50 transition-all">
                         <i class="fab fa-linkedin text-sm text-[#0077B5]"></i> Mon profil LinkedIn
                     </a>
+                    <a href="https://wa.me/697627966" target="_blank" class="inline-flex items-center gap-2.5 px-8 py-4 bg-white text-slate-900 rounded-xl font-bold border border-slate-200 hover:border-slate-300 hover:bg-slate-50 transition-all">
+                        <i class="fab fa-whatsapp text-sm text-[#25D366]"></i> Mon profil LinkedIn
+                    </a>
                 </div>
             </div>
         </div>
@@ -238,7 +296,7 @@
 
     <footer class="py-10 bg-white border-t border-slate-100 text-center">
         <p class="text-sm text-slate-500">
-            &copy; 2024 Collins MOMO. Fait avec <i class="fas fa-heart text-rose-500 mx-1 text-xs"></i> et passion.
+            &copy; 2024 Nova - Dev. Fait avec <i class="fas fa-heart text-rose-500 mx-1 text-xs"></i> et passion.
         </p>
         <div class="mt-4 flex justify-center space-x-6 text-slate-400">
             <a href="https://github.com/237collins" target="_blank" class="hover:text-slate-900 transition-colors"><i class="fab fa-github"></i></a>
